@@ -1,0 +1,33 @@
+{
+  "data": {
+    "chat": []
+  },
+  "schema": {
+    "chat": {
+      "username": {
+        "type": "string"
+      },
+      "message": {
+        "type": "string"
+      },
+      "datetime": {
+        "type": "datetime"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "chat": {}
+  }
+}
