@@ -20,7 +20,7 @@ module.exports = {
         }
         else if(req.isSocket) {
             //Subscribe this client
-            Client.watch(req.socket);
+            Chat.watch(req.socket);
             console.log("New User Subscribed to: " + req.socket.id);
         }
     }
