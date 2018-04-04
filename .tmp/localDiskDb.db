@@ -1,6 +1,175 @@
 {
   "data": {
-    "chat": []
+    "chat": [
+      {
+        "username": "MyName97",
+        "message": "adfasf",
+        "datetime": "2018-04-04T19:52:53.754Z",
+        "createdAt": "2018-04-04T19:52:53.767Z",
+        "updatedAt": "2018-04-04T19:52:53.767Z",
+        "id": 1
+      },
+      {
+        "username": "MyName34",
+        "message": "aaaa",
+        "datetime": "2018-04-04T19:53:14.249Z",
+        "createdAt": "2018-04-04T19:53:14.255Z",
+        "updatedAt": "2018-04-04T19:53:14.255Z",
+        "id": 2
+      },
+      {
+        "username": "MyName119",
+        "message": "Hello there",
+        "datetime": "2018-04-04T19:54:50.850Z",
+        "createdAt": "2018-04-04T19:54:50.855Z",
+        "updatedAt": "2018-04-04T19:54:50.855Z",
+        "id": 3
+      },
+      {
+        "username": "MyName485",
+        "message": "hello",
+        "datetime": "2018-04-04T19:54:59.983Z",
+        "createdAt": "2018-04-04T19:54:59.988Z",
+        "updatedAt": "2018-04-04T19:54:59.988Z",
+        "id": 4
+      },
+      {
+        "username": "MyName361",
+        "message": "adfasdf",
+        "datetime": "2018-04-04T19:55:35.250Z",
+        "createdAt": "2018-04-04T19:55:35.254Z",
+        "updatedAt": "2018-04-04T19:55:35.254Z",
+        "id": 5
+      },
+      {
+        "username": "MyName286",
+        "message": "aaaaa",
+        "datetime": "2018-04-04T19:55:41.323Z",
+        "createdAt": "2018-04-04T19:55:41.329Z",
+        "updatedAt": "2018-04-04T19:55:41.329Z",
+        "id": 6
+      },
+      {
+        "username": "MyName726",
+        "message": "111",
+        "datetime": "2018-04-04T19:56:04.361Z",
+        "createdAt": "2018-04-04T19:56:04.367Z",
+        "updatedAt": "2018-04-04T19:56:04.367Z",
+        "id": 7
+      },
+      {
+        "username": "MyName726",
+        "message": "4444",
+        "datetime": "2018-04-04T19:56:07.715Z",
+        "createdAt": "2018-04-04T19:56:07.719Z",
+        "updatedAt": "2018-04-04T19:56:07.719Z",
+        "id": 8
+      },
+      {
+        "username": "kyle",
+        "message": "hello",
+        "datetime": "2018-04-04T19:59:12.006Z",
+        "createdAt": "2018-04-04T19:59:12.025Z",
+        "updatedAt": "2018-04-04T19:59:12.025Z",
+        "id": 9
+      },
+      {
+        "username": "Adam",
+        "message": "Hello",
+        "datetime": "2018-04-04T19:59:23.927Z",
+        "createdAt": "2018-04-04T19:59:23.933Z",
+        "updatedAt": "2018-04-04T19:59:23.933Z",
+        "id": 10
+      },
+      {
+        "username": "dooo dooo",
+        "message": "potato",
+        "datetime": "2018-04-04T20:00:25.700Z",
+        "createdAt": "2018-04-04T20:00:25.708Z",
+        "updatedAt": "2018-04-04T20:00:25.708Z",
+        "id": 11
+      },
+      {
+        "username": "Candace",
+        "message": "Hello I am candAce",
+        "datetime": "2018-04-04T20:00:28.497Z",
+        "createdAt": "2018-04-04T20:00:28.502Z",
+        "updatedAt": "2018-04-04T20:00:28.502Z",
+        "id": 12
+      },
+      {
+        "username": "Kyle",
+        "message": "I farted!",
+        "datetime": "2018-04-04T20:00:47.189Z",
+        "createdAt": "2018-04-04T20:00:47.196Z",
+        "updatedAt": "2018-04-04T20:00:47.196Z",
+        "id": 13
+      },
+      {
+        "username": "theRealKyle",
+        "message": "excuse me!",
+        "datetime": "2018-04-04T20:01:01.683Z",
+        "createdAt": "2018-04-04T20:01:01.700Z",
+        "updatedAt": "2018-04-04T20:01:01.700Z",
+        "id": 14
+      },
+      {
+        "username": "Kyle",
+        "message": "fake news",
+        "datetime": "2018-04-04T20:01:15.102Z",
+        "createdAt": "2018-04-04T20:01:15.109Z",
+        "updatedAt": "2018-04-04T20:01:15.109Z",
+        "id": 15
+      },
+      {
+        "username": "Dan",
+        "message": "Whoaaaa",
+        "datetime": "2018-04-04T20:02:49.365Z",
+        "createdAt": "2018-04-04T20:02:49.317Z",
+        "updatedAt": "2018-04-04T20:02:49.317Z",
+        "id": 16
+      },
+      {
+        "username": "Adam",
+        "message": "Hello",
+        "datetime": "2018-04-04T20:03:43.989Z",
+        "createdAt": "2018-04-04T20:03:43.994Z",
+        "updatedAt": "2018-04-04T20:03:43.994Z",
+        "id": 17
+      },
+      {
+        "username": "Kyle",
+        "message": "I think Adam smells bad, don't tell anyone",
+        "datetime": "2018-04-04T20:12:34.630Z",
+        "createdAt": "2018-04-04T20:12:34.636Z",
+        "updatedAt": "2018-04-04T20:12:34.636Z",
+        "id": 18
+      },
+      {
+        "username": "Adam",
+        "message": "I'm right here",
+        "datetime": "2018-04-04T20:12:48.798Z",
+        "createdAt": "2018-04-04T20:12:48.803Z",
+        "updatedAt": "2018-04-04T20:12:48.803Z",
+        "id": 19
+      },
+      {
+        "username": "Kyle",
+        "message": "I'm talking about a different Adam",
+        "datetime": "2018-04-04T20:13:03.137Z",
+        "createdAt": "2018-04-04T20:13:03.142Z",
+        "updatedAt": "2018-04-04T20:13:03.142Z",
+        "id": 20
+      },
+      {
+        "username": "Adam",
+        "message": "Hmmm",
+        "datetime": "2018-04-04T20:13:39.096Z",
+        "createdAt": "2018-04-04T20:13:39.102Z",
+        "updatedAt": "2018-04-04T20:13:39.102Z",
+        "id": 21
+      }
+    ]
   },
   "schema": {
     "chat": {
@@ -28,6 +197,8 @@
     }
   },
   "counters": {
-    "chat": {}
+    "chat": {
+      "id": 21
+    }
   }
 }

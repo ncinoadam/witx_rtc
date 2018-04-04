@@ -1,9 +1,7 @@
 <div data-ng-app="RealTimeChat" data-ng-controller="ChatController" data-ng-init="init()">
   <ng-container>
-      <div class="row">
-          <div class="row" ng-repeat="chat in chatList">
-            {{chat.username}}: {{chat.message}}
-          </div>
+      <div class="row" ng-repeat="chat in chatList">
+        {{chat.username}}: {{chat.message}}
       </div>
       <div class="row">
         <div class=col-md-4>
@@ -13,7 +11,7 @@
           <input type="text" data-ng-model="message"/>
         </div>
         <div class="col-md-4">
-            <button type="button" class="btn btn-sm btn-default" ng-click="submit()">Submit</button>
+            <button type="button" class="btn btn-sm" ng-click="submit()">Submit</button>
         </div>
       </div>
   </ng-view>
