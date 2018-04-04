@@ -1,5 +1,20 @@
-<div data-ng-app="RealTimeChat" data-ng-controller="ChatController">
-  <div class="row">
-    <h1>Hello World</h1>
-  </div>
+<div data-ng-app="RealTimeChat" data-ng-controller="ChatController" data-ng-init="init()">
+  <ng-container>
+      <div class="row">
+          <div class="row" ng-repeat="chat in chatList">
+            {{chat.username}}: {{chat.message}}
+          </div>
+      </div>
+      <div class="row">
+        <div class=col-md-4>
+          <input type="text" data-ng-model="name" />
+        </div>
+        <div class="col-md-4">
+          <input type="text" data-ng-model="message"/>
+        </div>
+        <div class="col-md-4">
+            <button type="button" class="btn btn-sm btn-default" ng-click="submit()">Submit</button>
+        </div>
+      </div>
+  </ng-view>
 </div>
