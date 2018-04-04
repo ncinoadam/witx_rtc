@@ -1,17 +1,17 @@
-<div data-ng-app="RealTimeChat" data-ng-controller="ChatController" data-ng-init="init()">
+<div data-ng-app="RealTimeChat" data-ng-controller="ChatController as vm" data-ng-init="vm.init()">
   <ng-container>
-      <div class="row" ng-repeat="chat in chatList">
+      <div class="row" ng-repeat="chat in vm.chatList">
         {{chat.username}}: {{chat.message}}
       </div>
       <div class="row">
         <div class=col-md-4>
-          <input type="text" data-ng-model="name" />
+          <input type="text" data-ng-model="vm.name" />
         </div>
         <div class="col-md-4">
-          <input type="text" data-ng-model="message"/>
+          <input type="text" data-ng-model="vm.message"/>
         </div>
         <div class="col-md-4">
-            <button type="button" class="btn btn-sm" ng-click="submit()">Submit</button>
+            <button type="button" class="btn btn-sm" ng-click="vm.submit()">Submit</button>
         </div>
       </div>
   </ng-view>
