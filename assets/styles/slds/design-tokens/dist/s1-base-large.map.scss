@@ -1,0 +1,25 @@
+
+$s1-base-large-map: (
+    
+    'font-size-medium': (0.8125rem),
+    
+    'font-size-medium-a': (0.875rem),
+    // Header for desktop.
+    'height-header': (3.125rem),
+    
+    'font-size-x-large': (1.25rem),
+    
+    'font-size-xx-large': (1.75rem),
+    
+    'font-size-large': (1rem),
+    // Stage left for desktop when open.
+    'width-stage-left-expanded': (15rem),
+    // Stage left for desktop when closed (showing icons only).
+    'width-stage-left-collapsed': (4rem),
+    
+    'font-size-small': (0.75rem),
+    // Medium tap target size
+    'square-icon-medium': (2rem),
+    // Unitless line-heights for reusability
+    'line-height-text': (1.5),
+);

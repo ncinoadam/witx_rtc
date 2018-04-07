@@ -1,1 +1,1 @@
-angular.module('RealTimeChat', ['ui.bootstrap']);
+angular.module('RealTimeChat', []);

@@ -1,18 +1,117 @@
-<div data-ng-app="RealTimeChat" data-ng-controller="ChatController as vm" data-ng-init="vm.init()">
-  <ng-container>
-      <div class="row" ng-repeat="chat in vm.chatList">
-        {{chat.username}}: {{chat.message}}
-      </div>
-      <div class="row">
-        <div class=col-md-4>
-          <input type="text" data-ng-model="vm.name" />
-        </div>
-        <div class="col-md-4">
-          <input type="text" data-ng-model="vm.message"/>
-        </div>
-        <div class="col-md-4">
-            <button type="button" class="btn btn-sm" ng-click="vm.submit()">Submit</button>
-        </div>
-      </div>
-  </ng-view>
+<div class="slds" ng-app="RealTimeChat" ng-controller="ChatController as vm">
+	<ng-view>
+		<!-- Page header -->
+		<div class="slds-page-header slds-size_1-of-1">
+			<div class="slds-media">
+				<div class="slds-media__figure">
+					<span class="slds-icon_container slds-icon-standard-opportunity"
+						title="Chat">
+						<svg class="slds-icon slds-page-header__icon" aria-hidden="true">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink"
+								xlink:href="/styles/slds/assets/icons/standard-sprite/svg/symbols.svg#live_chat"/>
+						</svg>
+					</span>
+				</div>
+				<div class="slds-media__body">
+					<h1 class="slds-page-header__title slds-truncate slds-align-middle"
+						title="WITX Real-Time Chat">
+						WITX Real-Time Chat
+					</h1>
+					<p class="slds-text-body_small slds-line-height_reset"
+					   ng-bind="vm.name">
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- / Page Header -->
+
+		<div class="slds-grid slds-wrap slds-grid_align-center slds-m-top_xx-large">
+			<!-- Centered chat area -->
+			<div class="slds-size_1-of-1 slds-medium-size_2-of-3 slds-large-size_2-of-5
+				slds-theme_shade slds-p-around_x-large">
+
+				<!-- Username entry area -->
+				<div class="slds-form slds-form_stacked slds-grid">
+					<div class="slds-form-element slds-size_1-of_2">
+						<label class="slds-form-element__label">Your Username</label>
+						<div class="slds-form-element__control">
+							<input type="text" class="slds-input" placeholder="Enter a username..."
+								ng-model="vm.name" />
+						</div>
+					</div>
+				</div>
+				<!-- / Username entry area -->
+
+				<!-- Chat message display -->
+				<section id="chat-window" role="log" class="slds-chat chat-window slds-p-top_small slds-m-top_medium">
+
+					<!-- Empty state when no messages available -->
+					<div ng-if="!vm.messages || vm.messages.length == 0">
+						<div class="slds-m-top--medium slds-align_absolute-center">
+							<svg class="empty-state-icon" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink"
+									 xlink:href="/styles/slds/assets/icons/utility-sprite/svg/symbols.svg#topic"/>
+							</svg>
+						</div>
+						<h2 class="slds-text-heading_medium slds-m-top_x-small slds-align_absolute-center">
+							No messages yet!
+						</h2>
+						<p class="slds-m-top_xx-small slds-align_absolute-center">
+							Start the conversation by sending a new message.
+						</p>
+					</div>
+					<!-- / Empty state when no messages available -->
+
+					<!-- Message feed -->
+					<ul class="slds-chat-list" ng-if="vm.messages && vm.messages.length > 0">
+						<li class="slds-chat-listitem slds-chat-listitem_inbound"
+							ng-class="{'slds-chat-listitem_inbound': (msg.username !== vm.name),
+								'slds-chat-listitem_outbound': (msg.username === vm.name)}"
+							ng-repeat="msg in vm.messages">
+							<div class="slds-chat-message">
+								<div class="slds-chat-message__body">
+									<div class="slds-chat-message__text"
+										 ng-class="{'slds-chat-message__text_inbound': (msg.username !== vm.name),
+											'slds-chat-message__text_outbound-agent': (msg.username === vm.name)}">
+										<span ng-bind="msg.message"></span>
+									</div>
+									<div class="slds-chat-message__meta"
+										 aria-label="said {{msg.username}}">
+										{{msg.username}} at {{msg.datetime | date : "h:mm:ss a"}}
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<!-- / Message feed -->
+
+				</section>
+				<!-- / Chat message display -->
+
+				<!-- Send message form -->
+				<div>
+					<div class="slds-form-element">
+						<div class="slds-form-element__control">
+							<textarea class="slds-textarea" placeholder="Enter a message"
+								ng-model="vm.message"
+								ng-keyup="$event.keyCode == 13 && vm.submit()">
+							</textarea>
+						</div>
+					</div>
+					<button
+						ng-disabled="!vm.message"
+						class="slds-button slds-button_brand slds-size--1-of-1"
+						ng-click="vm.submit()">
+						Send
+						<svg aria-hidden="true" class="slds-icon send-icon">
+							<use xlink:href="styles/slds/assets/icons/utility-sprite/svg/symbols.svg#rules"></use>
+						</svg>
+					</button>
+				</div>
+				<!-- / Send message form -->
+
+			</div>
+			<!-- / Centered chat area -->
+		</div>
+	</ng-view>
 </div>
