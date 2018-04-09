@@ -1,0 +1,52 @@
+/**
+ * Defines custom styling extending the Design System
+ * UNCW Theme
+ */
+
+html {
+    background-color: #0e7171;
+}
+
+.slds svg.empty-state-icon {
+    width: 75px;
+    height: 75px;
+    fill: #fab863;
+}
+
+.slds section.chat-window {
+    background-color: #FFFFFF;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.slds div.slds-chat-message__text {
+    min-width: 100px;
+}
+
+.slds svg.send-icon {
+    width: 15px;
+}
+
+.slds button.slds-button_brand {
+    background-color: #fab863;
+}
+
+.slds button.slds-button_brand[disabled] {
+    background: #c9c7c5;
+    border-color: #c9c7c5;
+}
+
+.slds .slds-button_brand:focus, .slds .slds-button_brand:hover {
+    background-color: #fab863;
+    border-color: #fab863;
+}
+
+.slds .slds-button:focus {
+    outline: 0;
+    box-shadow: 0 0 3px #fab863;
+}
+
+.slds .slds-button_brand:active {
+    background-color: #fab863;
+    border-color: #fab863;
+}

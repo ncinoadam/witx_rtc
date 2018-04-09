@@ -61,6 +61,7 @@ typings/
 
 #ide files
 .vscode*
+.idea*
 
 #All .DS_Store files
 .DS_Store
